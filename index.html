@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Chatbot</title>
+</head>
+<body>
+    <h1>Welcome to Sneha's Chatbot</h1>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "8f21cd9b-0a5c-4a8c-b0f2-0ba8b1c3c317",
+        region: "us-south",
+        serviceInstanceID: "3b69f387-8d1d-4fc0-8f86-6c5c6370b1d2",
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
